@@ -459,7 +459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780e51de1cd11ce48824fbdbba5a47a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!114 &444818798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,7 +1400,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -6367560908665664636, guid: b6f42f821f3b6b1439b488d8561b5905, type: 3}
   m_Color: {r: 0.5471698, g: 0, b: 0.43948326, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1409,7 +1408,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &802078385
@@ -2508,7 +2507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780e51de1cd11ce48824fbdbba5a47a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 444818798}
 --- !u!4 &2035403067
 Transform:
   m_ObjectHideFlags: 0
