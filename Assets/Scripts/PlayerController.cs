@@ -7,10 +7,12 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isGrounded = false;
+    private Vector3 spawnPoint;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spawnPoint = transform.position;
     }
 
     void Update()
@@ -34,5 +36,17 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Ground"))
             isGrounded = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("DeathZone"))
+            Respawn();
+    }
+
+    void Respawn()
+    {
+        rb.linearVelocity = Vector2.zero;
+        transform.position = spawnPoint;
     }
 }
